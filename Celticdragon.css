@@ -11,6 +11,7 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
 .bonus-draw-container {
     display: flex;
     gap: 20px; /* Space between items */
@@ -36,11 +37,11 @@ body {
     margin: 0; /* Removes default margin */
 }
 
-
 .text-container {
     text-align: center;
     margin-bottom: 150px; 
 }
+
 /* Styles for the logo */
 .logo {
     position: absolute;
@@ -59,6 +60,7 @@ header {
     color: #ffd700; /* Gold text color */
     padding: 20px 0;
     text-align: center; /* Center align header content */
+    position: relative; /* Ensure header content flows correctly */
 }
 
 header h1 {
@@ -92,6 +94,11 @@ nav ul li a:hover {
 /* Section styles */
 .section {
     padding: 50px 0;
+}
+
+.section img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
 }
 
 /* Calendar styles */
@@ -264,7 +271,6 @@ footer {
 
 footer p {
     margin: 0; /* Remove default margin */
-    bottom: 0;
 }
 
 /* Media Queries for responsiveness */
@@ -273,7 +279,7 @@ footer p {
         width: 90%;
     }
 
-    .header h1 {
+    header h1 {
         font-size: 30px;
     }
 
