@@ -46,7 +46,7 @@ body {
     position: absolute;
     top: 10px;
     left: 20px;
-    width: 120px; /* Adjust the width as needed */
+    width: 100px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
 
