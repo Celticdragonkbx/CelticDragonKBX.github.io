@@ -61,6 +61,7 @@ header {
     padding: 20px 0;
     text-align: center; /* Center align header content */
     position: relative; /* Ensure header content flows correctly */
+    padding-left: 150px; /* Add padding to ensure the logo doesn't overlap the text */
 }
 
 header h1 {
@@ -164,10 +165,11 @@ nav ul li a:hover {
 }
 
 /* Style for the gallery images */
-.gallery-item img {
-    max-width: 100%; /* Ensure images do not exceed container width */
-    height: auto; /* Allow height to adjust based on image aspect ratio */
-    border-radius: 5px; /* Rounded corners for images */
+.gallery-item img,
+.gallery-item video {
+    max-width: 100%; /* Ensure images and videos do not exceed container width */
+    height: auto; /* Allow height to adjust based on aspect ratio */
+    border-radius: 5px; /* Rounded corners for images and videos */
     cursor: pointer; /* Change cursor to indicate clickable */
 }
 
