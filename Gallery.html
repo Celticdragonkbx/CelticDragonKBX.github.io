@@ -1,213 +1,182 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gallery - Celtic Dragon KBX Kickboxing</title>
-	<link rel="stylesheet" href="Celticdragon.css">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Celtic Dragon KBX Kickboxing</title>
+<link rel="stylesheet" href="Celticdragon.css">
+<style>
+/* Add CSS for gallery images and videos */
+.gallery-item img,
+.gallery-item video {
+    width: 200px; /* Set a fixed width for all images and videos */
+    height: 200px; /* Set a fixed height for all images and videos */
+    object-fit: cover; /* Ensure images and videos maintain aspect ratio and cover the specified dimensions */
+    border-radius: 5px; /* Rounded corners for images and videos */
+}
 
-	<style>
-	/* Add CSS for gallery images */
-	.gallery-item img {
-	width: 200px; /* Set a fixed width for all images */
-	height: 200px; /* Set a fixed height for all images */
-	object-fit: cover; /* Ensure images maintain aspect ratio and cover the specified dimensions */
-	border-radius: 5px; /* Rounded corners for images */
-	}
-	</style>
-	</head>
-	<body>
-	<header>
-	<div class="container">
-         <img src="Logo.jpg" alt="Company Logo" class="logo">
-	<h1>Celtic Dragon KBX Kickboxing</h1>
-	<nav>
-	<ul>
-	               <li><a href="index.html" target="_blank">Home</a></li>
-	               <li><a href="class.html" target="_blank">Classes</a></li>                  
-                    <li><a href="ClubNews.html" target="_blank">Club News</a></li>
-                     <li><a href="contact.html" target="_blank">Contact</a></li>
-                     
-	</ul>
-	</nav>
-	</div>
-	</header>
-        
-	<section id="gallery" class="section">
-	<div class="container gallery">
-	<!-- Gallery images -->
-        
-        
-	<div class="gallery-item">
-    
-	<img src="carlow1.jpg" alt="Image 1">
+/* Ensuring the video item container does not interfere with the gallery layout */
+.video-item {
+    display: flex; /* Display the video items inline */
+    justify-content: center; /* Center align video items */
+    align-items: center; /* Center align video items */
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 20px; /* Space between video items */
+}
 
-	</div>
-        
-        <div class="gallery-item">
-	<img src="Belts.jpg" alt="Image 2">
+/* Ensuring the section layout for the videos */
+#videos .container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to next line */
+    justify-content: space-around; /* Space items around */
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+    <img src="Logo.jpg" alt="Company Logo" class="logo">
+    <h1>Celtic Dragon KBX Kickboxing</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="class.html" target="_blank">Classes</a></li>
+            <li><a href="ClubNews.html" target="_blank">Club News</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
 
-	</div>
-        <div class="gallery-item">
-	<img src="newbawn2.jpg" alt="Image 3">
-
-	</div>
-	<div class="gallery-item">
-	<img src="newbawn3.jpg" alt="Image 4">
-
-	</div>
-        
-	<div class="gallery-item">
-	<img src="carlow.jpg" alt="Image 5">
-        </div>
-        
+<section id="gallery" class="section">
+<div class="container gallery">
+    <!-- Gallery images -->
     <div class="gallery-item">
-	<img src="carlow3.jpg" alt="Image 6">
+        <img src="carlow1.jpg" alt="Image 1">
+    </div>
+    <div class="gallery-item">
+        <img src="Belts.jpg" alt="Image 2">
+    </div>
+    <div class="gallery-item">
+        <img src="newbawn2.jpg" alt="Image 3">
+    </div>
+    <div class="gallery-item">
+        <img src="newbawn3.jpg" alt="Image 4">
+    </div>
+    <div class="gallery-item">
+        <img src="carlow.jpg" alt="Image 5">
+    </div>
+    <div class="gallery-item">
+        <img src="carlow3.jpg" alt="Image 6">
+    </div>
+    <div class="gallery-item">
+        <img src="geor.jpg" alt="Image 7">
+    </div>
+    <div class="gallery-item">
+        <img src="training.jpg" alt="Image 8">
+    </div>
+    <div class="gallery-item">
+        <img src="carlow2.jpg" alt="Image 9">
+    </div>
+    <div class="gallery-item">
+        <img src="Mark.jpg" alt="Image 10">
+    </div>
+    <div class="gallery-item">
+        <img src="cillian.jpg" alt="Image 11">
+    </div>
+    <div class="gallery-item">
+        <img src="fun.jpg" alt="Image 12">
+    </div>
+    <div class="gallery-item">
+        <img src="pressup.jpg" alt="Image 13">
+    </div>
+    <div class="gallery-item">
+        <img src="medals.jpg" alt="Image 14">
+    </div>
+    <div class="gallery-item">
+        <img src="newbawn5.jpg" alt="Image 15">
+    </div>
+</div>
+</section>
 
-	</div>
-	<div class="gallery-item">
-	<img src="geor.jpg" alt="Image 7">
+<section id="videos" class="section">
+<div class="container">
+    <div class="video-item">
+        <h2>Videos</h2>
+        <video controls>
+            <source src="VID-20240403-WA0001.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-item">
+        <video controls>
+            <source src="VID-20240403-WA0008.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-item">
+        <video controls>
+            <source src="VID-20240403-WA0025.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Add more video items as needed -->
+</div>
+</section>
 
-	</div>
-    
-	<div class="gallery-item">
-	<img src="training.jpg" alt="Image 8">
+<!-- Modal for enlarged images -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+</div>
 
-	</div>
-	<div class="gallery-item">
-	<img src="carlow2.jpg" alt="Image 9">
+<footer>
+    <p>&copy; Celtic Dragon KBX All rights reserved.</p>
+    <h3>Opening Hours</h3>
+    <ul>
+        <li>Monday: 6.15 PM - 9.00 PM</li>
+        <li>Tuesday: 7.00 PM - 9.00 PM</li>
+        <li>Wednesday: 6.15 PM - 9.00 PM</li>
+        <li>Thursday: FACILITIES AVAILABLE</li>
+        <li>Friday: 6.15 PM - 8.40 PM</li>
+        <li>Saturday: FACILITIES AVAILABLE</li>
+        <li>Sunday: FACILITIES AVAILABLE</li>
+        <br>
+        <li>FACILITIES AVAILABLE TO RENT FOR PERSONAL TRAINING, YOGA ETC IF SUITABLE ON TIMES CLASSES NOT HELD</li>
+    </ul>
+</footer>
 
-	</div>
-    
-	<div class="gallery-item">
-	<img src="Mark.jpg" alt="Image 10">
+<!-- JavaScript for slideshow functionality -->
+<script>
+var modal = document.getElementById('myModal');
+var images = document.querySelectorAll('.gallery-item img');
+var modalImg = document.getElementById("img01");
+var span = document.getElementsByClassName("close")[0];
+var slideIndex = 0;
 
-	</div>
-        <div class="gallery-item">
-	<img src="cillian.jpg" alt="Image 11">
+images.forEach(function(img) {
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        slideIndex = Array.from(images).indexOf(this);
+    }
+});
 
-	</div>
-     
-        <div class="gallery-item">
-	<img src="fun.jpg" alt="Image 12">
+span.onclick = function() {
+    modal.style.display = "none";
+}
 
-	</div>
-    
-        <div class="gallery-item">
-	<img src="pressup.jpg" alt="Image 13">
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-	</div>
-         <div class="gallery-item">
-	<img src="medals.jpg" alt="Image 14">
-
-	</div>
-         <div class="gallery-item">
-	<img src="newbawn5.jpg" alt="Image 14">
-
-	</div>
-       </div>
-	
-	
-
-	
-	</section>
-	
-	<!-- Existing HTML code above this line -->
-	
-	<section id="videos" class="section">
-	<div class="container">
-	<div class="video-item">
-	<h2>Videos</h2>
-	<div class="video-item">
-	<video controls>
-	<source src="VID-20240403-WA0001.mp4" type="video/mp4">
-
-	Your browser does not support the video tag.
-	</video>
-	</div>
-	</div>
-	<div class="video-item">
-	<video controls>
-	<source src="VID-20240403-WA0008.mp4" type="video/mp4">
-
-	Your browser does not support the video tag.
-	</video>
-	</div>
-	
-	<div class="video-item">
-	<video controls>
-	<source src="VID-20240403-WA0025.mp4" type="video/mp4">
-
-	Your browser does not support the video tag.
-	</video>
-	</div>
-	<!-- Add more video items as needed -->
-	</div>
-	</section>
-	
-	<!-- Existing HTML code below this line -->
-	
-	
-	<!-- Modal for enlarged images -->
-	<div id="myModal" class="modal">
-	<span class="close">&times;</span>
-	<img class="modal-content" id="img01">
-	<button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-	<button class="next" onclick="plusSlides(1)">&#10095;</button>
-	</div>
-	
-	      <footer>
-        
-           <p>&copy; Celtcdragonkbx All rights reserved.</p>
-        <h3>Opening Hours</h3>
-      <ul>
-        <ol>Monday:    6.15 PM - 9.00 PM</ol>
-        <ol>Tuesday:   7.00 PM - 9.00 PM</ol>
-        <ol>Wednesday: 6.15 PM - 9.00 PM</ol>
-        <ol>Thursday:  FACILITIES AVAILABLE</ol>
-        <ol>Friday:    6.15 PM - 8.40 PM</ol>
-        <ol>Saturday:  FACILITIES AVAILABLE</ol>
-        <ol>Sunday:    FACILITIES AVAILABLE</ol>
-          <br>
-          <ol>FACILITIES AVAILABLE TO RENT FOR PERSONAL TRAINING, YOGA ETC IF SUITABLE ON TIMES CLASSES NOT HELD</ol>
-      </ul>
-        
-     
-    </footer>
-	
-	<!-- JavaScript for slideshow functionality -->
-	<script>
-	var modal = document.getElementById('myModal');
-	var images = document.querySelectorAll('.gallery-item img');
-	var modalImg = document.getElementById("img01");
-	var span = document.getElementsByClassName("close")[0];
-	var slideIndex = 0;
-	
-	images.forEach(function(img) {
-	img.onclick = function() {
-	modal.style.display = "block";
-	modalImg.src = this.src;
-	slideIndex = Array.from(images).indexOf(this);
-	}
-	});
-	
-	span.onclick = function() { 
-	modal.style.display = "none";
-	}
-	
-	function plusSlides(n) {
-	showSlides(slideIndex += n);
-	}
-	
-	function showSlides(n) {
-	if (n >= images.length) { slideIndex = 0; }
-	if (n < 0) { slideIndex = images.length - 1; }
-	modalImg.src = images[slideIndex].src;
-	}
-	</script>
-        
-   
-
-	</body>
-	</html>
-
+function showSlides(n) {
+    if (n >= images.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = images.length - 1; }
+    modalImg.src = images[slideIndex].src;
+}
+</script>
+</body>
+</html>
