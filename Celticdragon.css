@@ -273,7 +273,9 @@ footer {
 
 footer p {
     margin: 0; /* Remove default margin */
+    bottom: 0;
 }
+
 
 /* Media Queries for responsiveness */
 @media (max-width: 1200px) {
