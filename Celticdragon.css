@@ -154,6 +154,11 @@ nav ul li a:hover {
     grid-gap: 10px; /* Gap between grid items */
     justify-items: center; /* Center items horizontally */
 }
+/* Style for small-profile */
+.small-profile {
+    width: 350px; /* Adjust the width to your desired size */
+    height: 350px; /* Adjust the height to your desired size */
+    border-radius: 70%; /* To make the image circular */
 
 /* Style for each gallery item */
 .gallery-item {
