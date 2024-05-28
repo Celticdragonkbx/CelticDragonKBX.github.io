@@ -12,14 +12,12 @@ body {
     margin: 0 auto;
 }
 
-/* Bonus draw container */
 .bonus-draw-container {
     display: flex;
     gap: 20px; /* Space between items */
     flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
-/* Bonus draw item */
 .bonus-draw-item {
     display: flex;
     align-items: center; /* Centers content vertically */
@@ -39,13 +37,12 @@ body {
     margin: 0; /* Removes default margin */
 }
 
-/* Text container */
 .text-container {
     text-align: center;
     margin-bottom: 150px; 
 }
 
-/* Logo styles */
+/* Styles for the logo */
 .logo {
     position: absolute;
     top: 10px;
@@ -158,7 +155,7 @@ nav ul li a:hover {
     justify-items: center; /* Center items horizontally */
 }
 
-/* Gallery item */
+/* Style for each gallery item */
 .gallery-item {
     width: 100%; /* Ensure each item takes full width of the grid */
     padding: 10px; /* Add spacing around gallery items */
@@ -167,7 +164,7 @@ nav ul li a:hover {
     align-items: center; /* Center align vertically */
 }
 
-/* Gallery image */
+/* Style for the gallery images */
 .gallery-item img,
 .gallery-item video {
     max-width: 100%; /* Ensure images and videos do not exceed container width */
@@ -176,7 +173,7 @@ nav ul li a:hover {
     cursor: pointer; /* Change cursor to indicate clickable */
 }
 
-/* Modal styles */
+/* Modal (enlarged image) styles */
 .modal {
     display: none; /* Hide modal by default */
     position: fixed; /* Fixed position */
@@ -189,7 +186,7 @@ nav ul li a:hover {
     background-color: rgba(0,0,0,0.9); /* Black background with opacity */
 }
 
-/* Modal content */
+/* Style for the enlarged image within the modal */
 .modal-content {
     margin: auto;
     display: block;
@@ -197,7 +194,7 @@ nav ul li a:hover {
     max-height: 80%; /* Adjust height as needed */
 }
 
-/* Close button */
+/* Style for the close button */
 .close {
     position: absolute;
     top: 15px;
@@ -215,7 +212,7 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* Slideshow buttons */
+/* Style for slideshow buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -245,7 +242,7 @@ nav ul li a:hover {
     right: 10px;
 }
 
-/* Video items */
+/* Add CSS for video items */
 .video-item {
     display: inline-block; /* Display the video items inline */
     margin-right: 10px; /* Adjust as needed for spacing between videos */
@@ -257,6 +254,102 @@ nav ul li a:hover {
     border-radius: 5px; /* Rounded corners for videos */
 }
 
-/* Small profile */
+/* Style for small-profile */
 .small-profile {
     width: 100%; /* Ensure the image is responsive */
+    max-width: 350px; /* Maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 70%; /* To make the image circular */
+}
+
+/* Footer styles */
+footer {
+    background-color: #000; /* Black footer background */
+    color: #ffd700; /* Gold text color */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Add space between last line and footer */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .bonus-draw-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bonus-draw-item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .bonus-draw-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bonus-draw-item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .small-profile {
+        max-width: 250px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .bonus-draw-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .small-profile {
+        max-width: 200px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
