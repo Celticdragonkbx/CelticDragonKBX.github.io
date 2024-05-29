@@ -256,6 +256,7 @@ nav ul li a:hover {
 
 /* Style for small-profile */
 .small-profile {
+    
     width: 100%; /* Ensure the image is responsive */
     max-width: 350px; /* Maximum width for larger screens */
     height: auto; /* Maintain aspect ratio */
@@ -264,8 +265,8 @@ nav ul li a:hover {
 
 /* Footer styles */
 footer {
-    background-color: #000; /* Black footer background */
-    color: #ffd700; /* Gold text color */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #000; /* Black text color */
     text-align: center;
     padding: 20px 0;
     margin-top: 20px; /* Add space between last line and footer */
@@ -275,89 +276,16 @@ footer p {
     margin: 0; /* Remove default margin */
     bottom: 0;
 }
- footer ol {
-            list-style-type: none; /* Remove default list markers */
-            padding: 0; /* Remove padding */
-        }
 
-        footer ol li {
-            margin-bottom: 5px; /* Add some space between items */
-        }
-
-/* Media Queries for responsiveness */
-@media (max-width: 1200px) {
-    .container {
-        width: 90%;
-    }
-
-    header h1 {
-        font-size: 30px;
-    }
-
-    .bonus-draw-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .bonus-draw-item {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10px;
-    }
+footer ol {
+    list-style-type: none; /* Remove default list markers */
+    padding: 0; /* Remove padding */
+    display: flex;
+    justify-content: center; /* Center align the list */
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .bonus-draw-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .bonus-draw-item {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .small-profile {
-        max-width: 250px;
-    }
-
-    footer {
-        padding: 10px 0;
-    }
-
-    footer p {
-        font-size: 14px;
-    }
+footer ol li {
+    margin-bottom: 5px; /* Add some space between items */
+    margin-right: 10px; /* Add space between list items */
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 24px;
-    }
-
-    .bonus-draw-item img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .small-profile {
-        max-width: 200px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
