@@ -275,7 +275,14 @@ footer p {
     margin: 0; /* Remove default margin */
     bottom: 0;
 }
+ footer ol {
+            list-style-type: none; /* Remove default list markers */
+            padding: 0; /* Remove padding */
+        }
 
+        footer ol li {
+            margin-bottom: 5px; /* Add some space between items */
+        }
 
 /* Media Queries for responsiveness */
 @media (max-width: 1200px) {
