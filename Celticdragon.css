@@ -22,9 +22,8 @@ body {
 .bonus-draw-item {
     display: flex;
     align-items: center; /* Centers content vertically */
-    flex: 1 1 calc(45% - 20px); /* Adjusted for gap */
+    flex: 1; /* Ensures items take equal space */
     flex-direction: column; /* Column direction for smaller screens */
-    box-sizing: border-box;
     text-align: center; /* Center align text */
     margin-bottom: 20px; /* Space between items on small screens */
 }
@@ -53,10 +52,7 @@ body {
     width: 100px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
-@media (max-width: 768px) {
-    .bonus-draw-item {
-        flex-basis: calc(50% - 20px); /* Two items per row */
-    }
+
 /* Header styles */
 header {
     background-color: #000; /* Black header background */
@@ -296,4 +292,5 @@ footer ol li {
     margin-bottom: 5px; /* Add some space between items */
     margin-right: 10px; /* Add space between list items */
 }
+
 
