@@ -266,8 +266,8 @@ nav ul li a:hover {
 /* Footer styles */
 footer {
      
-    background-color: #f4f4f4; /* Light grey background */
-    color: #000; /* Black text color */
+    background-color: #000; /* Black background */
+    color: #ffd700; /*  Gold text color */
     text-align: center;
     padding: 20px 0;
     margin-top: 20px; /* Add space between last line and footer */
