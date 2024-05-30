@@ -38,9 +38,9 @@ body {
 .bonus-draw-item p {
     margin: 0; /* Removes default margin */
 }
-img[src="MaleWax.png"] {
-    max-width: 50%; /* Maximum width of the image is 100% of its container */
-    height: auto; /* Maintain aspect ratio */
+.small-image {
+    width: 80px; /* Adjust the width as needed */
+    height: auto;
 }
 
 .text-container {
