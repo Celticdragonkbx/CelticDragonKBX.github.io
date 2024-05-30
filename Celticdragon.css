@@ -16,6 +16,7 @@ body {
     display: flex;
     gap: 20px; /* Space between items */
     flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+     justify-content: space-between;
 }
 
 .bonus-draw-item {
