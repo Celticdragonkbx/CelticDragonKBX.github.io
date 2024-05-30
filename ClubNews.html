@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="Celticdragon.css">
     <style>
+        .gallery-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
         .gallery-item img {
-            width: 100%; /* Smaller image size */
+            max-width: 100%;
             height: auto;
             border-radius: 5px;
         }
@@ -16,18 +23,19 @@
         .bonus-draw-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
             justify-content: space-between;
+            gap: 20px;
         }
 
         .bonus-draw-item {
-            flex: 1 1 45%; /* Make items take up about half the container width */
+            flex: 1 1 calc(50% - 10px); /* Adjust width to fit two items per row with gap */
             box-sizing: border-box;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .bonus-draw-item img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
             border-radius: 5px;
         }
@@ -58,82 +66,26 @@
             <img src="Logo.jpg" alt="Company Logo" class="logo">
             <h1>Celtic Dragon KBX Kickboxing Club News</h1>
             <nav>
-                
-    <ul>
-        <li><a href="index.html" target="_blank">Home 🏠</a></li>
-        <li><a href="class.html" target="_blank">Classes 📚</a></li>
-        <li><a href="contact.html" target="_blank">Contact ✉️</a></li>
-        <li><a href="Gallery.html" target="_blank">Gallery 🖼️</a></li>
-    </ul>
-</nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home 🏠</a></li>
+                    <li><a href="class.html" target="_blank">Classes 📚</a></li>
+                    <li><a href="contact.html" target="_blank">Contact ✉️</a></li>
+                    <li><a href="Gallery.html" target="_blank">Gallery 🖼️</a></li>
+                    <li><a href="ClubNews.html" target="_blank">Club News 📰</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-<main>
-    <section id="about" class="section">
-        <div class="container">
-            <h2>Team Kaiju Gears Up for World Kickboxing Tournament in Vienna October 2024</h2>
-            <p>Team Kaiju, renowned for their dedication and fighting spirit in the world of kickboxing, is set to make a powerful appearance at the upcoming World Kickboxing Tournament in Vienna. This prestigious event, slated to take place from October 22nd to 27th, will gather the finest kickboxers from around the globe, each vying for the coveted championship title.</p>
-            
-            <h2>Preparation and Strategy</h2>
-            <p>In preparation for the World Kickboxing Tournament, Team Kaiju has undergone rigorous training sessions, focusing on enhancing their technical skills, endurance, and strategic planning. Sensi John has emphasized the importance of adaptability and mental fortitude, key elements that he believes will be crucial for success on the international stage.</p>
-            
-            <h2>The Road Ahead</h2>
-            <p>As Team Kaiju heads to Vienna, they carry with them not only the hopes of their supporters but also a legacy of excellence and a commitment to uphold the honor of their sport. The World Kickboxing Tournament promises to be a thrilling spectacle, with Team Kaiju poised to deliver memorable performances and potentially bring home the championship titles. Stay tuned for more updates as Team Kaiju embarks on this exciting journey, ready to showcase their talent and determination on one of the world’s most prestigious stages.</p>
-            
-            <p><a href="https://www.gofundme.com/f/travel-fund-for-vienna-world-championships?member=33403371&utm_campaign=p_lico+share-sheet&utm_medium=copy_link&utm_source=customer" target="_blank"><i class="fab fa-facebook"></i> Gofundme page for Vienna</a></p>
-            
-            <div class="gallery-item">
-                <img src="Team2.jpg" alt="Members" >
-            </div>
-            
-            <div class="text-container">
-                <p>Back Row: Sensi John, Dean O'Riordan, Jamie Smith, Amy Foley, Anthony McGrath.</p>
-                <p>Front Row: Jessie O'Riordan, Rowan Doyle, Cillian Banville, Mark O'Riordan</p>
-            </div>
-            
-            <div class="bonus-draw-container">
-                <div class="bonus-draw-item">
-                    <img src="bonusball.jpg" alt="Bonus ball">
-                    <p>🎉 Please support our Bonus draw 🎉 €5 a number Prize €250 for the winner, and 🍷 Wine and 🍫 Chocolate for the runner up!:<br>
-                    Payment via revolut <a href="https://revolut.me/siobha0i7v" target="_blank">revolut.me/siobha0i7v</a> or cash.</p>
-                </div>
-                <div class="bonus-draw-item">
-                    <img src="bbq.jpg" alt="BBQ Foley">
-                    <p>🔥 Please support our BBQ event 🔥 15th June at Foley Bar Newbawn 🍔 €5 Burger, with great food and 🎵 Music!
-<br>
-                    Payment via revolut <a href="https://revolut.me/siobha0i7v" target="_blank">revolut.me/siobha0i7v</a> or cash.</p>
-                </div>
-
-                 <div class="bonus-draw-item">
-                    <img src="MaleWax.png" alt="Male Waxing">
-                    <p>Please support our Male Waxing event 6th July at Foley Murray Bar New Ross Y34 H732, starting 7pm free finger food, <br>
-                        ✨ Live Male Waxing - Watch and support our brave participants as they get waxed live!
-                        🎟️ Raffle Prizes - Amazing prizes to be won throughout the night!
-                        🔢 Guess the Amount - Participate in our fun game to guess the amount and stand a chance to win big!
-
-                    Payment via revolut <a href="https://revolut.me/siobha0i7v" target="_blank">revolut.me/siobha0i7v</a> or cash.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-  <footer>
-        
-       <p>&copy; Celtcdragonkbx All rights reserved.</p>
-        <h3 style="font-size: 10px; text-align: center"> Opening Hours</h3>
-      <ul>
-        <ol style="font-size: 10px;">Monday:    6.15 PM - 9.00 PM</ol>
-        <ol style="font-size:10px;">Tuesday:   7.00 PM - 9.00 PM</ol>
-        <ol style="font-size: 10px;">Wednesday: 6.15 PM - 9.00 PM</ol>
-        <ol style="font-size: 10px;">Thursday:  FACILITIES AVAILABLE</ol>
-        <ol style="font-size: 10px;">Friday:    6.15 PM - 8.40 PM</ol>
-        <ol style="font-size: 10px;">Saturday:  FACILITIES AVAILABLE</ol>
-        <ol style="font-size: 10px;">Sunday:    FACILITIES AVAILABLE</ol>
-          <br>
-          <ol style="font-size: 9px;">FACILITIES AVAILABLE TO RENT FOR PERSONAL TRAINING, YOGA ETC IF SUITABLE ON TIMES CLASSES NOT HELD</ol>
-      </ul>
-    </footer>
-</body>
-</html>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Team Kaiju Gears Up for World Kickboxing Tournament in Vienna October 2024</h2>
+                <p>Team Kaiju, renowned for their dedication and fighting spirit in the world of kickboxing, is set to make a powerful appearance at the upcoming World Kickboxing Tournament in Vienna. This prestigious event, slated to take place from October 22nd to 27th, will gather the finest kickboxers from around the globe, each vying for the coveted championship title.</p>
+                
+                <h2>Preparation and Strategy</h2>
+                <p>In preparation for the World Kickboxing Tournament, Team Kaiju has undergone rigorous training sessions, focusing on enhancing their technical skills, endurance, and strategic planning. Sensi John has emphasized the importance of adaptability and mental fortitude, key elements that he believes will be crucial for success on the international stage.</p>
+                
+                <h2>The Road Ahead</h2>
+                <p>As Team Kaiju heads to Vienna, they carry with them not only the hopes of their supporters but also a legacy of excellence and a commitment to uphold the honor of their sport. The World Kickboxing Tournament promises to be a thrilling spectacle, with Team Kaiju poised to deliver memorable performances and potentially bring home the championship titles. Stay tuned for more updates as Team Kaiju embarks on this exciting journey, ready to showcase their talent and determination on one of the world’s most prestigious stages.</p>
+                
+                <p><a href="https://www.gofundme.com/f/travel-fund-for-vienna-world-championships?member=33403371&utm_campaign=p_lico+share-sheet&utm_medium=copy_link&utm_source=customer" target="_blank"><i class="fab fa-facebook"></i> Gof
