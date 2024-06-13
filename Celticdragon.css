@@ -10,31 +10,29 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 20px; /* Added padding for better spacing */
 }
-
 
 /* Card styles */
 .ui.container {
-            margin-top: 5%;
-            width: 90% !important;
-        }
+    margin-top: 5%;
+    width: 90% !important;
+}
 
-        .description {
-            font-style: italic;
-            font-weight: bold;
+.description {
+    font-style: italic;
+    font-weight: bold;
+}
 
-
-        }
-
-        .ui.card .date {
-            color: red;
-        }
+.ui.card .date {
+    color: red;
+}
 
 .bonus-draw-container {
     display: flex;
     gap: 20px; /* Space between items */
     flex-wrap: wrap; /* Ensure items wrap on smaller screens */
-     justify-content: space-between;
+    justify-content: space-between;
 }
 
 .bonus-draw-item {
@@ -56,6 +54,7 @@ body {
 .bonus-draw-item p {
     margin: 0; /* Removes default margin */
 }
+
 .small-image {
     width: 80px; /* Adjust the width as needed */
     height: auto;
@@ -78,7 +77,7 @@ body {
 /* Header styles */
 header {
     background-color: #000; /* Black header background */
-    background-image: url(Images/One%20Art%20logo.jpg); /* Center the background image */
+    background-image: url('Images/One%20Art%20logo.jpg'); /* Center the background image */
     background-size: cover; /* Cover the entire header with the background image */
     background-position: center;
     color: #ffd700; /* Gold text color */
@@ -280,7 +279,6 @@ nav ul li a:hover {
 
 /* Style for small-profile */
 .small-profile {
-    
     width: 100%; /* Ensure the image is responsive */
     max-width: 350px; /* Maximum width for larger screens */
     height: auto; /* Maintain aspect ratio */
@@ -289,7 +287,6 @@ nav ul li a:hover {
 
 /* Footer styles */
 footer {
-     
     background-color: #000; /* Black background */
     color: #ffd700; /*  Gold text color */
     text-align: center;
@@ -313,6 +310,31 @@ footer ol {
 footer ol li {
     margin-bottom: 5px; /* Add some space between items */
     margin-right: 10px; /* Add space between list items */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Full width on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    .gallery-item img, .gallery-item video {
+        height: auto; /* Allow height to adjust based on aspect ratio */
+    }
+
+    footer p {
+        font-size: 10px; /* Larger font size for readability */
+    }
+
+    footer ol li {
+        margin-bottom: 10px; /* Add space between items */
+    }
 }
 
 
