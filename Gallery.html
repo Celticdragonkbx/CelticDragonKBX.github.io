@@ -16,8 +16,8 @@
 .gallery-item img,
 .gallery-item video {
     width: 100%; /* Ensure items take up full width of the grid cell */
-    height: 200px; /* Set a fixed height for all images and videos */
-    object-fit: cover; /* Ensure images and videos maintain aspect ratio and cover the specified dimensions */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure images and videos maintain aspect ratio and fit within the specified dimensions */
     border-radius: 5px; /* Rounded corners for images and videos */
 }
 
@@ -25,14 +25,7 @@
 @media (max-width: 768px) {
     .gallery-item img,
     .gallery-item video {
-        height: 150px; /* Adjust height for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-item img,
-    .gallery-item video {
-        height: 120px; /* Adjust height for smaller screens */
+        object-fit: cover; /* Cover ensures the image fills the container while preserving aspect ratio */
     }
 }
 
@@ -196,6 +189,7 @@ function showSlides(n) {
 </script>
 </body>
 </html>
+
 
    
    
