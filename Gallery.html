@@ -17,7 +17,7 @@
 .gallery-item video {
     width: 100%; /* Ensure items take up full width of the grid cell */
     height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure images and videos maintain aspect ratio and fit within the specified dimensions */
+    object-fit: cover; /* Ensure images and videos maintain aspect ratio and cover the specified dimensions */
     border-radius: 5px; /* Rounded corners for images and videos */
 }
 
@@ -25,7 +25,16 @@
 @media (max-width: 768px) {
     .gallery-item img,
     .gallery-item video {
-        object-fit: cover; /* Cover ensures the image fills the container while preserving aspect ratio */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure images and videos maintain aspect ratio and cover the specified dimensions */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item img,
+    .gallery-item video {
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure images and videos maintain aspect ratio and cover the specified dimensions */
     }
 }
 
